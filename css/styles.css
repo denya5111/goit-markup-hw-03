@@ -32,7 +32,6 @@ p {
 }
 a {
   text-decoration: none;
-  display: block;
 }
 ul {
   list-style: none;
@@ -73,10 +72,6 @@ img {
 .header-logo-ending {
   color: #000000;
 }
-/* .header-logo-ending:hover,
-.header-logo-ending:focus {
-  color: var(--accent-color);
-} */
 
 /* --------------------------site-nav-------------------------- */
 
@@ -139,10 +134,11 @@ img {
 }
 .hero-container {
   max-width: 696px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
-  padding-top: 200px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 
   font-weight: 900;
   font-size: 44px;
@@ -153,13 +149,11 @@ img {
 }
 .hero .button {
   padding: 10px 32px;
-  margin-bottom: 200px;
 
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  /* display: flex; */
   align-items: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
@@ -254,27 +248,25 @@ img {
 footer {
   background-color: #2f303a;
 }
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* --------------------------footer logo-------------------------- */
 
 .footer .logo {
-  padding-top: 60px;
   margin-bottom: 20px;
   display: inline-block;
 }
 .footer-logo-ending {
   color: #ffffff;
 }
-/* .footer-logo-ending:hover,
-.footer-logo-ending:focus {
-  color: var(--accent-color);
-} */
 
 /* --------------------------address-------------------------- */
 
 .address-list {
   display: inline-block;
-  padding-bottom: 60px;
 
   font-weight: 400;
   font-size: 14px;
@@ -291,10 +283,10 @@ footer {
 }
 .address-list .map-link {
   color: #ffffff;
-  margin-bottom: 9px;
 }
-.mail-link {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
+  display: block;
 }
 
 /* --------------------------portfolio.html-------------------------- */
